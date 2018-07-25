@@ -1,0 +1,44 @@
+html{box-sizing: border-box;}
+*, *:before, *:after{box-sizing: inherit;}
+
+
+div {
+	width: 300px;
+}
+
+h2 {
+	background: green;
+	font-size: 2em;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+li {
+	border: 3px solid green;
+	border-left: 6px solid green;
+	border-right: 6px solid green;
+	padding: 15px;
+	list-style-type: none;
+	background: rgba(0,255,0,0.1);
+}
+li * {
+	color: black;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.card {
+	background: green;
+	text-align: center;
+}
+.card li {
+	background: rgba(255,255,255,0.9);
+	border: 2px solid green;
+	text-transform: capitalize;
+}
+
+img {
+	border-radius: 50%;
+	box-shadow: 1px 1px 1px #888;
+}
