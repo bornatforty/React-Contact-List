@@ -1,17 +1,18 @@
 html{box-sizing: border-box;}
 *, *:before, *:after{box-sizing: inherit;}
 
-
 div {
 	width: 300px;
+	margin: 0 auto;
 }
 
-h2 {
+header {
 	background: green;
 	font-size: 2em;
 	color: white;
 	padding: 10px;
 	text-align: center;
+	font-family: sans-serif;
 }
 
 li {
