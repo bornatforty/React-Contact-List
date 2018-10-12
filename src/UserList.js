@@ -4,15 +4,17 @@ import {Link} from 'react-router-dom'
 
 //receives props as parameter
 const UserList = (props) => (
-		<div>
+		<div className="listContainer">
 			<header>Contacts</header>
 			<ul>
 			{props.users.map(user => (
 				<li key={'user' + user.id}>
-				<Link to={`/user/${user.id}`}>
-					<img src={user.picture.thumbnail} />
-					{user.name.first} {user.name.last}
-				</Link>
+					<Link to={`/user/${user.id}`}>
+						<div className="contactContainer">
+							<img src={user.picture.thumbnail} alt={user.name} />
+							<span>{user.name.first} {user.name.last}</span>
+						</div>
+					</Link>
 				</li>
 				))} 
 			</ul>

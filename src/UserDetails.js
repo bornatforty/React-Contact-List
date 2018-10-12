@@ -4,7 +4,7 @@ import {getUser} from './userFunctions'
 
 const UserDetails = (props) => (
 	<div className="card">
-		<img src={props.img} /><br />
+		<img src={props.img} alt={props.name} /><br />
 		<ul>
 			<li>{props.name}</li>
 			<li>{props.email}</li>
