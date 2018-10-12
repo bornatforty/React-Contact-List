@@ -7,9 +7,9 @@ const UserDetails = (props) => (
 		<header>{props.name}</header>
 		<img src={props.img} alt={props.name} /><br />
 		<ul>
-			<i className="fa fa-envelope-square"><li>{props.email}</li></i>
-			<i className="fa fa-phone-square"><li>{props.phone}</li></i>
-			<i className="fa fa-map-marker-alt"><li>{props.location}</li></i>
+			<li><i className="fa fa-envelope-square"></i>{props.email}</li>
+			<li><i className="fa fa-phone-square"></i>{props.phone}</li>
+			<li><i className="fa fa-map-marker"></i>{props.location}</li>
 		</ul>
 	</div>
 

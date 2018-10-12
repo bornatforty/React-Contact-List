@@ -24,6 +24,13 @@ span {
 	color: white;
 	text-decoration: none;
 }
+.fa {
+	margin-right: 1vw;
+	transition: 0.5s;
+}
+.fa:hover {
+	transform: rotateY(180deg);
+}
 header {
 	font-size: 2em;
 	font-weight: bold;
