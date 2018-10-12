@@ -1,3 +1,6 @@
+Please see version control prior to 10/11/2018 to see the original version of this project. I will be updating it with more modern styling techniques.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
