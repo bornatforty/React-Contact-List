@@ -3,6 +3,7 @@ import './App.css'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import UserList from './UserList'
 import UserDetails from './UserDetails'
+import 'font-awesome/css/font-awesome.min.css' 
 
 class App extends Component {
   render() {

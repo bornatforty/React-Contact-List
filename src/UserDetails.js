@@ -4,12 +4,12 @@ import {getUser} from './userFunctions'
 
 const UserDetails = (props) => (
 	<div className="card">
+		<header>{props.name}</header>
 		<img src={props.img} alt={props.name} /><br />
 		<ul>
-			<li>{props.name}</li>
-			<li>{props.email}</li>
-			<li>{props.phone}</li>
-			<li>{props.location}</li>
+			<i className="fa fa-envelope-square"><li>{props.email}</li></i>
+			<i className="fa fa-phone-square"><li>{props.phone}</li></i>
+			<i className="fa fa-map-marker-alt"><li>{props.location}</li></i>
 		</ul>
 	</div>
 
@@ -40,14 +40,9 @@ class UserDetailsContainer extends Component {
 
 	render() {
 		return (
-			<UserDetails {...this.state}/>
-
-
-
-			)
+				<UserDetails {...this.state}/>
+		)
 	}
-
-
 } //this is the data inside a container
 
 export default UserDetailsContainer

@@ -1,19 +1,28 @@
 html{box-sizing: border-box;}
 *, *:before, *:after{box-sizing: inherit;}
+a {
+	text-decoration: none;
+}
 
 .listContainer {
 	width: 50%;
 	margin: 0 auto;
-	background: #94a187;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(148,161,135,1) 20%, rgba(148,161,135,1) 80%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(148,161,135,1) 20%, rgba(148,161,135,1) 80%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(148,161,135,1) 20%, rgba(148,161,135,1) 80%, rgba(255,255,255,1) 100%);
+	padding: 1vw;
 }
 .contactContainer {
 	display: flex;
 	align-items: center;
 }
-.contactContainer > span {
+span {
 	font-family: sans-serif;
 	font-size: 1.2em;
 	margin-left: 1vw;
+	text-transform: capitalize;
+	color: white;
+	text-decoration: none;
 }
 header {
 	font-size: 2em;
@@ -22,6 +31,7 @@ header {
 	padding: 1vw;
 	text-align: center;
 	font-family: sans-serif;
+	text-transform: capitalize;
 }
 
 li {
@@ -31,21 +41,16 @@ li {
 	background: #29524a;
 	border-radius: 20px;
 	box-shadow: 2px 2px 3px #06070e;
-}
-li * {
-	color: #94a187;
+	color: white;
+	font-family: sans-serif;
 	text-decoration: none;
-	text-transform: capitalize;
 }
 
 .card {
-	background: green;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(148,161,135,1) 20%, rgba(148,161,135,1) 80%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(148,161,135,1) 20%, rgba(148,161,135,1) 80%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(148,161,135,1) 20%, rgba(148,161,135,1) 80%, rgba(255,255,255,1) 100%);
 	text-align: center;
-}
-.card li {
-	background: rgba(255,255,255,0.9);
-	border: 2px solid green;
-	text-transform: capitalize;
 }
 
 img {

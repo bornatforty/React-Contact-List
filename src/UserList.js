@@ -4,9 +4,8 @@ import {Link} from 'react-router-dom'
 
 //receives props as parameter
 const UserList = (props) => (
-		<div className="listContainer">
-			<header>Contacts</header>
-			<ul>
+			<ul className="listContainer">
+				<header>Contacts</header>
 			{props.users.map(user => (
 				<li key={'user' + user.id}>
 					<Link to={`/user/${user.id}`}>
@@ -18,7 +17,6 @@ const UserList = (props) => (
 				</li>
 				))} 
 			</ul>
-		</div>
 	) //userlist does the rendering. you could put it down in container but you have to change all props to this.state.
 
 class UserListContainer extends Component { //this could be in a separate file

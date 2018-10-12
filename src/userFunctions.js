@@ -5,5 +5,5 @@ export function getAllUsers() {
 }
 
 export function getUser(id) {
-	return users.find(user => user.id === id)
+	return users.find(user => user.id == id)
 }
