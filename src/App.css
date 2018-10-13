@@ -16,6 +16,10 @@ a {
 	display: flex;
 	align-items: center;
 }
+.contactContainer > img:active {
+	animation: zoomEffect 0.5s infinite;
+
+}
 span {
 	font-family: sans-serif;
 	font-size: 1.2em;
@@ -63,4 +67,18 @@ li {
 img {
 	border-radius: 50%;
 	box-shadow: 1px 1px 2px #06070e;
+}
+@keyframes zoomEffect {
+	0% {
+		opacity: 1.0;
+		transform: scale(1,1);
+	}
+	50% {
+		opacity: 0.6;
+		transform: scale(4,4);
+	}
+	100% {
+		opacity: 0.0;
+		transform: scale(10,10);
+	}
 }
