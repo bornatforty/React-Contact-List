@@ -17,7 +17,10 @@ a {
 	align-items: center;
 }
 .contactContainer > img:active {
-	animation: zoomEffect 0.5s infinite;
+	animation: zoomEffect 1s infinite;
+	-webkit-animation: zoomEffect 1s infinite;
+	-o-animation: zoomEffect 1s infinite;
+	-moz-animation: zoomEffect 1s infinite;
 
 }
 span {
@@ -30,10 +33,15 @@ span {
 }
 .fa {
 	margin-right: 1vw;
-	transition: 0.5s;
 }
-.fa:hover {
-	transform: rotateY(180deg);
+.fa-envelope-square {
+	animation: 0.5s ease-in 0.5s 2 flippy;
+}
+.fa-phone-square {
+	animation: 0.5s ease-in 0.5s 3 flippy;
+}
+.fa-map-marker {
+	animation: 0.5s ease-in 0.5s 4 flippy;
 }
 header {
 	font-size: 2em;
@@ -80,5 +88,103 @@ img {
 	100% {
 		opacity: 0.0;
 		transform: scale(10,10);
+	}
+}
+@-webkit-keyframes zoomEffect {
+	0% {
+		opacity: 1.0;
+		transform: scale(1,1);
+	}
+	50% {
+		opacity: 0.6;
+		transform: scale(4,4);
+	}
+	100% {
+		opacity: 0.0;
+		transform: scale(10,10);
+	}
+}
+@-moz-keyframes zoomEffect {
+	0% {
+		opacity: 1.0;
+		transform: scale(1,1);
+	}
+	50% {
+		opacity: 0.6;
+		transform: scale(4,4);
+	}
+	100% {
+		opacity: 0.0;
+		transform: scale(10,10);
+	}
+}
+@-o-keyframes zoomEffect {
+	0% {
+		opacity: 1.0;
+		transform: scale(1,1);
+	}
+	50% {
+		opacity: 0.6;
+		transform: scale(4,4);
+	}
+	100% {
+		opacity: 0.0;
+		transform: scale(10,10);
+	}
+}
+@keyframes flippy {
+	0% {
+		transform: rotateY(0deg);
+	}
+	50% {
+		transform: rotateY(180deg);
+	}
+	75% {
+		transform: rotateY(270deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
+}
+@-o-keyframes flippy {
+	0% {
+		transform: rotateY(0deg);
+	}
+	50% {
+		transform: rotateY(180deg);
+	}
+	75% {
+		transform: rotateY(270deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
+}
+@-webkit-keyframes flippy {
+	0% {
+		transform: rotateY(0deg);
+	}
+	50% {
+		transform: rotateY(180deg);
+	}
+	75% {
+		transform: rotateY(270deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
+}
+@-moz-keyframes flippy {
+	0% {
+		transform: rotateY(0deg);
+	}
+	50% {
+		transform: rotateY(180deg);
+	}
+	75% {
+		transform: rotateY(270deg);
+	}
+	100% {
+		transform: rotateY(360deg);
 	}
 }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import {getUser} from './userFunctions'
+import {Link} from 'react-router-dom'
+import Navbar from './Navbar'
 
 
 const UserDetails = (props) => (
@@ -40,7 +42,10 @@ class UserDetailsContainer extends Component {
 
 	render() {
 		return (
+			<div>
+				<Navbar />
 				<UserDetails {...this.state}/>
+			</div>
 		)
 	}
 } //this is the data inside a container
