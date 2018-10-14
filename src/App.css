@@ -2,8 +2,14 @@ html{box-sizing: border-box;}
 *, *:before, *:after{box-sizing: inherit;}
 a {
 	text-decoration: none;
+	color: inherit;
 }
-
+.navbarContainer {
+	float: left;
+	font-family: sans-serif;
+	color: #06070e;
+	text-decoration: none;
+}
 .listContainer {
 	width: 50%;
 	margin: 0 auto;
@@ -21,7 +27,13 @@ a {
 	-webkit-animation: zoomEffect 1s infinite;
 	-o-animation: zoomEffect 1s infinite;
 	-moz-animation: zoomEffect 1s infinite;
-
+}
+.cardContainer {
+	display: flex;
+	justify-content: space-between;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(148,161,135,1) 20%, rgba(148,161,135,1) 80%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(148,161,135,1) 20%, rgba(148,161,135,1) 80%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(148,161,135,1) 20%, rgba(148,161,135,1) 80%, rgba(255,255,255,1) 100%);
 }
 span {
 	font-family: sans-serif;
@@ -66,16 +78,24 @@ li {
 }
 
 .card {
-	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(148,161,135,1) 20%, rgba(148,161,135,1) 80%, rgba(255,255,255,1) 100%);
-	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(148,161,135,1) 20%, rgba(148,161,135,1) 80%, rgba(255,255,255,1) 100%);
-	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(148,161,135,1) 20%, rgba(148,161,135,1) 80%, rgba(255,255,255,1) 100%);
 	text-align: center;
+	width: 50%;
+	height: 100vh;
 }
-
+.card > ul > li:nth-child(3) {
+	text-transform: capitalize;
+}
 img {
 	border-radius: 50%;
 	box-shadow: 1px 1px 2px #06070e;
 }
+.avatar > img {
+	width: 50vw;
+	box-shadow: none;
+	filter: grayscale(60%);
+	mask-image: radial-gradient(black 40%, transparent 60%);
+}
+
 @keyframes zoomEffect {
 	0% {
 		opacity: 1.0;

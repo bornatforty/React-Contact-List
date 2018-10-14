@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 class Navbar extends Component {
 	render() {
 	return (
-		<div>
+		<div className="navbarContainer">
 			<Link to={`/`}><i className="fa fa-arrow-left"></i>Back</Link>
 		</div>
 	

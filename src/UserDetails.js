@@ -1,18 +1,22 @@
 import React, { Component } from 'react'
 import {getUser} from './userFunctions'
 import {Link} from 'react-router-dom'
-import Navbar from './Navbar'
 
 
 const UserDetails = (props) => (
-	<div className="card">
-		<header>{props.name}</header>
-		<img src={props.img} alt={props.name} /><br />
-		<ul>
-			<li><i className="fa fa-envelope-square"></i>{props.email}</li>
-			<li><i className="fa fa-phone-square"></i>{props.phone}</li>
-			<li><i className="fa fa-map-marker"></i>{props.location}</li>
-		</ul>
+	<div className="cardContainer">
+		<div className="card">
+			<span className="navbarContainer"><Link to={`/`}><i className="fa fa-arrow-left"></i>Back</Link></span>
+			<header>{props.name}</header>
+			<ul>
+				<li><i className="fa fa-envelope-square"></i>{props.email}</li>
+				<li><i className="fa fa-phone-square"></i>{props.phone}</li>
+				<li><i className="fa fa-map-marker"></i>{props.location}</li>
+			</ul>
+		</div>
+		<div className="avatar">
+			<img src={props.img} alt={props.name} />
+		</div>
 	</div>
 
 	) //this is where rendering container is happening. data is from the container
@@ -42,10 +46,7 @@ class UserDetailsContainer extends Component {
 
 	render() {
 		return (
-			<div>
-				<Navbar />
 				<UserDetails {...this.state}/>
-			</div>
 		)
 	}
 } //this is the data inside a container
