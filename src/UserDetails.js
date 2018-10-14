@@ -6,12 +6,25 @@ import {Link} from 'react-router-dom'
 const UserDetails = (props) => (
 	<div className="cardContainer">
 		<div className="card">
-			<span className="navbarContainer"><Link to={`/`}><i className="fa fa-arrow-left"></i>Back</Link></span>
+			<span className="navbarContainer">
+				<Link to={`/`}>
+					<span className="fa-stack fa-2x">
+						<i className="fa fa-circle fa-stack-2x fa-inverse"></i>
+						<i className="fa fa-arrow-left fa-stack-1x"></i>
+					</span>
+				</Link>
+			</span>
 			<header>{props.name}</header>
 			<ul>
-				<li><i className="fa fa-envelope-square"></i>{props.email}</li>
-				<li><i className="fa fa-phone-square"></i>{props.phone}</li>
-				<li><i className="fa fa-map-marker"></i>{props.location}</li>
+				<li>
+					<i className="fa fa-envelope-square"></i>{props.email}
+				</li>
+				<li>
+					<i className="fa fa-phone-square"></i>{props.phone}
+				</li>
+				<li>
+					<i className="fa fa-map-marker"></i>{props.location}
+				</li>
 			</ul>
 		</div>
 		<div className="avatar">

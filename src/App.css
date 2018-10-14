@@ -9,14 +9,22 @@ a {
 	font-family: sans-serif;
 	color: #06070e;
 	text-decoration: none;
+	font-size: 1em;
+}
+.fa-stack {
+	color: #06070e;
 }
 .listContainer {
-	width: 50%;
+	width: 100%;
 	margin: 0 auto;
 	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(148,161,135,1) 20%, rgba(148,161,135,1) 80%, rgba(255,255,255,1) 100%);
 	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(148,161,135,1) 20%, rgba(148,161,135,1) 80%, rgba(255,255,255,1) 100%);
 	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(148,161,135,1) 20%, rgba(148,161,135,1) 80%, rgba(255,255,255,1) 100%);
 	padding: 1vw;
+}
+.listContainer > li {
+	width: 40%;
+	margin: 5px auto;
 }
 .contactContainer {
 	display: flex;
